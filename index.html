@@ -10,14 +10,18 @@
 
 <body>
     <div id="container">
-        <h1>Ayak Hesaplama</h1>
+        <h1>Feet Calculate</h1>
         <div>
-            <input type="text" id="animal" placeholder="cow,sheep,chicken,pig..">
-            <button onclick="calculate()" id="calculate">Calculate</button>
+            <input type="text" id="animal"
+                placeholder="You can just write cow,sheep,chicken,pig. If you enter wrong animal, animals' feet will not be calculated ">
+            <button onclick="add()" id="add">Add</button>
+            <button onclick="calculateAnimalsFeet()" id="calculate">Calculate</button>
+            <button onclick="resetCalculate()" id="reset">Reset</button>
         </div>
 
         <hr>
         <div id="result"></div>
+        <div id="added"></div>
 
 
     </div>
